@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 class World extends React.Component {
 	render() {
-		return <h2>ABCD</h2>
+		return <h2>ABCDEF</h2>
 	}
 }
 
