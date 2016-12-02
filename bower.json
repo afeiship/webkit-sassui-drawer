@@ -1,0 +1,26 @@
+{
+  "name": "webpack-react-es6",
+  "description": "Webpack react es6 seed.",
+  "main": "dist/webpack-react-es6.js",
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "next"
+  ],
+  "homepage": "https://github.com/afeiship/webpack-react-es6",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src",
+    "gulp",
+    "gulpfile.js"
+  ]
+}
