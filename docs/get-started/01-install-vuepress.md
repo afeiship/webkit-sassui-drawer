@@ -5,7 +5,7 @@
 ## install
 
 ```shell
-npm install -D vuepress
+npm install -D vuepress@next
 npm install -D webpack-dev-middleware
 ```
 
