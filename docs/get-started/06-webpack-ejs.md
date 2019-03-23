@@ -1,7 +1,7 @@
-# webpack html ejs:
+# install ejs plugin
 
 
-## install:
+## install
 
 ```shell
 npm install -D html-webpack-plugin

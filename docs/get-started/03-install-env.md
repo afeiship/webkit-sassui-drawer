@@ -1,4 +1,4 @@
-# env
+# install cross-env
 
 ## install
 

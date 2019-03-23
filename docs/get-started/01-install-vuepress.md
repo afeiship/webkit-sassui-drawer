@@ -1,4 +1,4 @@
-# vuepress
+# install vuepress
 
 > for docs.
 

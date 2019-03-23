@@ -1,4 +1,4 @@
-# clean webpack;
+# install clean webpack
 
 
 ## install

@@ -1,4 +1,4 @@
-# babel
+# install babel7
 
 > Babel
 
