@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "dev": "webpack",
+    "dev": "webpack-dev-server",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
@@ -22,8 +22,10 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
     "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.4.0",
     "babel-loader": "^8.0.5",
     "cross-env": "^5.2.0",
+    "html-webpack-plugin": "^3.2.0",
     "vuepress": "^0.14.10",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
