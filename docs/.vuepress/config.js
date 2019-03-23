@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: ['@vuepress/back-to-top'],
   base: '/webpack-react-es6/',
   title: 'webpack-react-es6',
   description: 'Webpack react es6 seed.',
