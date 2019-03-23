@@ -12,7 +12,7 @@
     "dev": "webpack-dev-server",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "docs:deploy": "npm run docs:build && git checkout gh-pages && ./deploy.sh"
+    "docs:deploy": "npm run docs:build && gh-pages -d ./docs/.vuepress/dist -m 'add: rebuild by gh-pages'"
   },
   "resolutions": {
     "webpack-dev-middleware": "3.6.0"
@@ -27,6 +27,7 @@
     "@vuepress/plugin-back-to-top": "^1.0.0-alpha.44",
     "babel-loader": "^8.0.5",
     "cross-env": "^5.2.0",
+    "gh-pages": "^2.0.1",
     "html-webpack-plugin": "^3.2.0",
     "vuepress": "^1.0.0-alpha.44",
     "webpack": "^4.29.6",
