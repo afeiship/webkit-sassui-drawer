@@ -2,10 +2,10 @@
 
 > Webpack react es6 seed.
 
-## Steps:
+## Get started
 
 ::: tip
-基本的安装步骤
+Basic install steps.
 :::
 
 [01-install-vuepress](/get-started/01-install-vuepress.md)
