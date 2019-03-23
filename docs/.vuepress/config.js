@@ -1,4 +1,5 @@
 module.exports = {
+  base: './',
   title: 'webpack-react-es6',
   description: 'Webpack react es6 seed.',
   themeConfig: {
