@@ -11,7 +11,8 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs && git checkout gh-pages && ./deploy.sh && ggg && git checkout master"
+    "docs:build": "vuepress build docs",
+    "docs:deploy": "npm run docs:build && git checkout gh-pages && ./deploy.sh"
   },
   "resolutions": {
     "webpack-dev-middleware": "3.6.0"
