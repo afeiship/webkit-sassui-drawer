@@ -16,6 +16,15 @@ module.exports = {
           '/get-started/05-install-clean.md',
           '/get-started/06-webpack-ejs.md'
         ]
+      },
+      {
+        title: 'Dotfiles',
+        collapsable: false,
+        children: [
+          '/dotfiles/01-npmrc.md',
+          '/dotfiles/02-prettier.md',
+          '/dotfiles/03-editorconfig.md'
+        ]
       }
     ]
   }
