@@ -5,7 +5,7 @@
 ## shell
 
 ```shell
-npm install --save-dev @babel/core @babel/preset-env @babel/preset-react @babel/register babel-loader
+npm install --save-dev @babel/core @babel/preset-env @babel/plugin-proposal-decorators @babel/preset-react @babel/register babel-loader
 ```
 
 ## .babelrc
