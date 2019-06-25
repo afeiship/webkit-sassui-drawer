@@ -1,42 +1,31 @@
 {
   "name": "webpack-react-es6",
-  "version": "1.0.0",
-  "description": "Webpack react es6 seed.",
-  "homepage": "https://github.com/afeiship/webpack-react-es6",
-  "author": {
-    "name": "afei",
-    "email": "1290657123@qq.com"
-  },
-  "license": "MIT",
-  "scripts": {
-    "dev": "webpack-dev-server",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "docs:deploy": "npm run docs:build && gh-pages -d ./docs/.vuepress/dist -m 'add: rebuild by gh-pages'"
-  },
-  "resolutions": {
-    "webpack-dev-middleware": "3.6.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/plugin-proposal-decorators": "^7.4.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.4.0",
-    "@babel/preset-env": "^7.4.2",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.4.0",
-    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.44",
-    "babel-loader": "^8.0.5",
-    "cross-env": "^5.2.0",
-    "gh-pages": "^2.0.1",
-    "html-webpack-plugin": "^3.2.0",
-    "vuepress": "^1.0.0-alpha.44",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0",
-    "webpack-dev-middleware": "^3.6.0",
-    "webpack-dev-server": "^3.2.1"
-  },
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
