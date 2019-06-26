@@ -44,6 +44,7 @@
         fbScript.onload = function() {
           if (navigator && navigator.serviceWorker) {
             if (window.__SW_DISABLED__) {
+              console.log('[ 😂Cache has clean! ]');
               navigator.serviceWorker.getRegistration('/').then(function(reg) {
                 reg && reg.unregister();
               });
