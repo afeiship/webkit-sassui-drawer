@@ -1,8 +1,11 @@
 const { resolve } = require('path');
+const webpack = require('webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const {
   override,
   addDecoratorsLegacy,
+  addWebpackPlugin,
   addWebpackAlias
 } = require('customize-cra');
 
@@ -26,5 +29,21 @@ module.exports = override(
     mixins: resolve(__dirname, 'src/components/mixins'),
     modals: resolve(__dirname, 'src/components/modals')
   }),
-  customizeOverride()
+  customizeOverride(),
+  addWebpackPlugin(
+    new webpack.ProvidePlugin({
+      React: 'react',
+      ReactDOM: 'react-dom',
+      nx: 'next-js-core2',
+      mixin: 'mixin-decorator'
+    })
+  ),
+  addWebpackPlugin(
+    new CopyWebpackPlugin([
+      {
+        from: './src/assets/fallback.js',
+        to: '.'
+      }
+    ])
+  )
 );

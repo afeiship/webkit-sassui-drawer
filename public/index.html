@@ -34,5 +34,24 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      window.onload = function() {
+        var head = document.getElementsByTagName('head')[0];
+        var fbScript = document.createElement('script');
+        fbScript.type = 'text/javascript';
+        fbScript.async = true;
+        fbScript.src = '/fallback.js?v=' + Date.now();
+        fbScript.onload = function() {
+          if (navigator && navigator.serviceWorker) {
+            if (window.__SW_DISABLED__) {
+              navigator.serviceWorker.getRegistration('/').then(function(reg) {
+                reg && reg.unregister();
+              });
+            }
+          }
+        };
+        head.appendChild(fbScript);
+      };
+    </script>
   </body>
 </html>
