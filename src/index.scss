@@ -1,0 +1,61 @@
+/*webkit-sassui-drawer Start*/
+$webkit-sassui-drawer-options: (
+  duration: 300ms,
+) !default;
+
+@keyframes webkit-sassui-drawer-from-left-in {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes webkit-sassui-drawer-from-left-out {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+@keyframes webkit-sassui-drawer-from-right-in {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes webkit-sassui-drawer-from-right-out {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+}
+
+.webkit-sassui-drawer {
+  $duration: map-get(
+    $map: $webkit-sassui-drawer-options,
+    $key: duration,
+  );
+  top:0;
+  position: fixed;
+  backface-visibility: hidden;
+  height: 100%;
+  box-sizing: border-box;
+
+  $from-list: (left, right);
+
+  &[data-from="left"]{
+    left: 0;
+  }
+  &[data-from="right"]{
+    right:0;
+  }
+
+  @each $key in $from-list {
+    &[data-from="#{$key}"] {
+
+      &.visible-true,
+      &[data-visible="true"] {
+        animation: $duration webkit-sassui-drawer-from-#{$key}-in ease-in-out forwards;
+      }
+
+      &.visible-false,
+      &[data-visible="false"] {
+        animation: $duration webkit-sassui-drawer-from-#{$key}-out ease-in-out forwards;
+      }
+    }
+  }
+}
+/*webkit-sassui-drawer End*/

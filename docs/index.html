@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>webkit-sassui-drawer</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.js"
+    integrity="sha512-wq5c217NlwsLqaLisr94LAkhrGiTqBSmJDwHyA3nmoBEbswI7nFZ5TtuDiRsLgq1bOaZKmqaWs8M213ESYAe6g=="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css"
+    integrity="sha512-6eqPOYQmUqGh2hFSAKha1dbQlMq1OaxityCVG80dkvGmmLdsAdrAUkgBKDV4fpAT/xOUdkB6uupudSbCwyoJPQ=="
+    crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container m-5">
+    <p class="text-right">
+      <button class="is-fullwidth mb-5 button is-dark" id="btn-set-left">SetLeft</button>
+      <button class="is-fullwidth mb-5 button is-success" id="btn-set-right">SetRight</button>
+      <button class="is-fullwidth button is-primary" id="btn-from-left">Show Drawer</button>
+    </p>
+    <div class="webkit-sassui-drawer" id="d1" style="width: 200px" hidden data-visible="false" data-from="left">
+      Toggle Drawer
+    </div>
+  </div>
+
+  <script>
+    $('#btn-set-left').click(() => {
+      $('#d1').attr('hidden', 'true');
+      $('#d1').attr('data-from', 'left')
+    });
+
+    $('#btn-set-right').click(() => {
+      $('#d1').attr('hidden', 'true');
+      $('#d1').attr('data-from', 'right')
+    });
+
+    $('#btn-from-left').click(() => {
+      const visible = $('#d1').attr('data-visible');
+      const value = visible === 'false' ? 'true' : 'false'
+      $('#d1').removeAttr('hidden');
+      $('#d1').attr({
+        'data-visible': value,
+      })
+    })
+  </script>
+
+</body>
+
+</html>
