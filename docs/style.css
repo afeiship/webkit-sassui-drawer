@@ -3,7 +3,7 @@
  * description: Drawer for webkit sassui.
  * homepage: https://github.com/afeiship/webkit-sassui-drawer
  * version: 1.0.0
- * date: 2020-10-24T10:32:21.552Z
+ * date: 2020-10-24T10:34:43.357Z
  * license: MIT
  */
 /*webkit-sassui-drawer Start*/
@@ -55,16 +55,16 @@
   left: 0;
 }
 
-.webkit-sassui-drawer[data-from="right"] {
-  right: 0;
-}
-
 .webkit-sassui-drawer[data-from="left"].visible-true, .webkit-sassui-drawer[data-from="left"][data-visible="true"] {
   animation: 300ms webkit-sassui-drawer-from-left-in ease-in-out forwards;
 }
 
 .webkit-sassui-drawer[data-from="left"].visible-false, .webkit-sassui-drawer[data-from="left"][data-visible="false"] {
   animation: 300ms webkit-sassui-drawer-from-left-out ease-in-out forwards;
+}
+
+.webkit-sassui-drawer[data-from="right"] {
+  right: 0;
 }
 
 .webkit-sassui-drawer[data-from="right"].visible-true, .webkit-sassui-drawer[data-from="right"][data-visible="true"] {

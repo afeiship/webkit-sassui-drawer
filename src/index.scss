@@ -24,27 +24,19 @@ $webkit-sassui-drawer-options: (
 }
 
 .webkit-sassui-drawer {
-  $duration: map-get(
-    $map: $webkit-sassui-drawer-options,
-    $key: duration,
-  );
+  $from-list: (left, right);
+  $duration: map-get( $map: $webkit-sassui-drawer-options, $key: duration, );
   top:0;
   position: fixed;
   backface-visibility: hidden;
   height: 100%;
   box-sizing: border-box;
 
-  $from-list: (left, right);
-
-  &[data-from="left"]{
-    left: 0;
-  }
-  &[data-from="right"]{
-    right:0;
-  }
-
   @each $key in $from-list {
     &[data-from="#{$key}"] {
+
+      @if $key == "left" { left: 0; }
+      @if $key == "right" { right: 0; }
 
       &.visible-true,
       &[data-visible="true"] {
