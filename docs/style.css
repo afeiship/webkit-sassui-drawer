@@ -2,8 +2,8 @@
  * name: @feizheng/webkit-sassui-drawer
  * description: Drawer for webkit sassui.
  * homepage: https://github.com/afeiship/webkit-sassui-drawer
- * version: 1.0.0
- * date: 2020-10-24T10:34:43.357Z
+ * version: 1.0.1
+ * date: 2020-10-25T03:12:08.255Z
  * license: MIT
  */
 /*webkit-sassui-drawer Start*/
@@ -51,27 +51,27 @@
   box-sizing: border-box;
 }
 
-.webkit-sassui-drawer[data-from="left"] {
+.webkit-sassui-drawer[data-placement="left"] {
   left: 0;
 }
 
-.webkit-sassui-drawer[data-from="left"].visible-true, .webkit-sassui-drawer[data-from="left"][data-visible="true"] {
+.webkit-sassui-drawer[data-placement="left"].visible-true, .webkit-sassui-drawer[data-placement="left"][data-visible="true"] {
   animation: 300ms webkit-sassui-drawer-from-left-in ease-in-out forwards;
 }
 
-.webkit-sassui-drawer[data-from="left"].visible-false, .webkit-sassui-drawer[data-from="left"][data-visible="false"] {
+.webkit-sassui-drawer[data-placement="left"].visible-false, .webkit-sassui-drawer[data-placement="left"][data-visible="false"] {
   animation: 300ms webkit-sassui-drawer-from-left-out ease-in-out forwards;
 }
 
-.webkit-sassui-drawer[data-from="right"] {
+.webkit-sassui-drawer[data-placement="right"] {
   right: 0;
 }
 
-.webkit-sassui-drawer[data-from="right"].visible-true, .webkit-sassui-drawer[data-from="right"][data-visible="true"] {
+.webkit-sassui-drawer[data-placement="right"].visible-true, .webkit-sassui-drawer[data-placement="right"][data-visible="true"] {
   animation: 300ms webkit-sassui-drawer-from-right-in ease-in-out forwards;
 }
 
-.webkit-sassui-drawer[data-from="right"].visible-false, .webkit-sassui-drawer[data-from="right"][data-visible="false"] {
+.webkit-sassui-drawer[data-placement="right"].visible-false, .webkit-sassui-drawer[data-placement="right"][data-visible="false"] {
   animation: 300ms webkit-sassui-drawer-from-right-out ease-in-out forwards;
 }
 

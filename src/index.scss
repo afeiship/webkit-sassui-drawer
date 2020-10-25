@@ -33,7 +33,7 @@ $webkit-sassui-drawer-options: (
   box-sizing: border-box;
 
   @each $key in $from-list {
-    &[data-from="#{$key}"] {
+    &[data-placement="#{$key}"] {
 
       @if $key == "left" { left: 0; }
       @if $key == "right" { right: 0; }

@@ -2,8 +2,8 @@
  * name: @feizheng/webkit-sassui-drawer
  * description: Drawer for webkit sassui.
  * homepage: https://github.com/afeiship/webkit-sassui-drawer
- * version: 1.0.0
- * date: 2020-10-24T10:34:43.357Z
+ * version: 1.0.1
+ * date: 2020-10-25T03:12:08.255Z
  * license: MIT
  */
 
@@ -42,7 +42,7 @@ $webkit-sassui-drawer-options: (
   box-sizing: border-box;
 
   @each $key in $from-list {
-    &[data-from="#{$key}"] {
+    &[data-placement="#{$key}"] {
 
       @if $key == "left" { left: 0; }
       @if $key == "right" { right: 0; }
