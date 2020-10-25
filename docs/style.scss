@@ -9,10 +9,10 @@
   width: 200px;
   background: #fff;;
   padding: 20px;
-  &[data-from="left"]{
+  &[data-placement="left"]{
     border-right: 10px solid #ccc;
   }
-  &[data-from="right"]{
+  &[data-placement="right"]{
     border-left: 10px solid #ccc;
   }
 }

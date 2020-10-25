@@ -22,7 +22,7 @@
       <button class="is-fullwidth mb-5 button is-success" id="btn-set-right">SetRight</button>
       <button class="is-fullwidth button is-primary" id="btn-from-left">Show Drawer</button>
     </p>
-    <div class="webkit-sassui-drawer" id="d1" style="width: 200px" hidden data-visible="false" data-from="left">
+    <div class="webkit-sassui-drawer" id="d1" style="width: 200px" hidden data-visible="false" data-placement="left">
       Toggle Drawer
     </div>
   </div>
@@ -30,12 +30,12 @@
   <script>
     $('#btn-set-left').click(() => {
       $('#d1').attr('hidden', 'true');
-      $('#d1').attr('data-from', 'left')
+      $('#d1').attr('data-placement', 'left')
     });
 
     $('#btn-set-right').click(() => {
       $('#d1').attr('hidden', 'true');
-      $('#d1').attr('data-from', 'right')
+      $('#d1').attr('data-placement', 'right')
     });
 
     $('#btn-from-left').click(() => {
