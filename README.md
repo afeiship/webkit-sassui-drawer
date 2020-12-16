@@ -1,5 +1,5 @@
-# webkit-sassui-drawer
-> Drawer for webkit sassui.
+# wsui-drawer
+> Drawer for wsui.
 
 [![version][version-image]][version-url]
 [![license][license-image]][license-url]
@@ -8,33 +8,26 @@
 
 ## installation
 ```shell
-# install
-npm i @feizheng/webkit-sassui-drawer
-
-# update
-npm update @feizheng/webkit-sassui-drawer
+npm i @jswork/wsui-drawer
 ```
 
 ## usage
 ```scss
-@import '~@feizheng/webkit-sassui-drawer';
+@import '~@jswork/wsui-drawer';
 ```
 
-## documentation
-- https://afeiship.github.io/webkit-sassui-drawer/
-
 ## license
-Code released under [the MIT license](https://github.com/afeiship/webkit-sassui-drawer/blob/master/LICENSE.txt).
+Code released under [the MIT license](https://github.com/afeiship/wsui-drawer/blob/master/LICENSE.txt).
 
-[version-image]: https://img.shields.io/npm/v/@feizheng/webkit-sassui-drawer
-[version-url]: https://npmjs.org/package/@feizheng/webkit-sassui-drawer
+[version-image]: https://img.shields.io/npm/v/@jswork/wsui-drawer
+[version-url]: https://npmjs.org/package/@jswork/wsui-drawer
 
-[license-image]: https://img.shields.io/npm/l/@feizheng/webkit-sassui-drawer
-[license-url]: https://github.com/afeiship/webkit-sassui-drawer/blob/master/LICENSE.txt
+[license-image]: https://img.shields.io/npm/l/@jswork/wsui-drawer
+[license-url]: https://github.com/afeiship/wsui-drawer/blob/master/LICENSE.txt
 
-[size-image]: https://img.shields.io/bundlephobia/minzip/@feizheng/webkit-sassui-drawer
-[size-url]: https://github.com/afeiship/webkit-sassui-drawer/blob/master/dist/webkit-sassui-drawer.min.js
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/wsui-drawer
+[size-url]: https://github.com/afeiship/wsui-drawer/blob/master/dist/wsui-drawer.min.js
 
-[download-image]: https://img.shields.io/npm/dm/@feizheng/webkit-sassui-drawer
-[download-url]: https://www.npmjs.com/package/@feizheng/webkit-sassui-drawer
+[download-image]: https://img.shields.io/npm/dm/@jswork/wsui-drawer
+[download-url]: https://www.npmjs.com/package/@jswork/wsui-drawer
 

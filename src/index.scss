@@ -1,31 +1,31 @@
-/*webkit-sassui-drawer Start*/
-$webkit-sassui-drawer-options: (
+/*wsui-drawer Start*/
+$wsui-drawer-options: (
   duration: 300ms,
 ) !default;
 
-@keyframes webkit-sassui-drawer-from-left-in {
+@keyframes wsui-drawer-from-left-in {
   from { transform: translateX(-100%); }
   to { transform: translateX(0); }
 }
 
-@keyframes webkit-sassui-drawer-from-left-out {
+@keyframes wsui-drawer-from-left-out {
   from { transform: translateX(0); }
   to { transform: translateX(-100%); }
 }
 
-@keyframes webkit-sassui-drawer-from-right-in {
+@keyframes wsui-drawer-from-right-in {
   from { transform: translateX(100%); }
   to { transform: translateX(0); }
 }
 
-@keyframes webkit-sassui-drawer-from-right-out {
+@keyframes wsui-drawer-from-right-out {
   from { transform: translateX(0); }
   to { transform: translateX(100%); }
 }
 
-.webkit-sassui-drawer {
+.wsui-drawer {
   $from-list: (left, right);
-  $duration: map-get( $map: $webkit-sassui-drawer-options, $key: duration, );
+  $duration: map-get( $map: $wsui-drawer-options, $key: duration, );
   top:0;
   position: fixed;
   backface-visibility: hidden;
@@ -40,14 +40,14 @@ $webkit-sassui-drawer-options: (
 
       &.visible-true,
       &[data-visible="true"] {
-        animation: $duration webkit-sassui-drawer-from-#{$key}-in ease-in-out forwards;
+        animation: $duration wsui-drawer-from-#{$key}-in ease-in-out forwards;
       }
 
       &.visible-false,
       &[data-visible="false"] {
-        animation: $duration webkit-sassui-drawer-from-#{$key}-out ease-in-out forwards;
+        animation: $duration wsui-drawer-from-#{$key}-out ease-in-out forwards;
       }
     }
   }
 }
-/*webkit-sassui-drawer End*/
+/*wsui-drawer End*/

@@ -1,81 +1,81 @@
 /*!
- * name: @feizheng/webkit-sassui-drawer
- * description: Drawer for webkit sassui.
- * homepage: https://github.com/afeiship/webkit-sassui-drawer
- * version: 1.0.1
- * date: 2020-10-25T05:59:43.697Z
+ * name: @jswork/wsui-drawer
+ * description: Drawer for wsui.
+ * homepage: https://github.com/afeiship/wsui-drawer
+ * version: 1.0.0
+ * date: 2020-12-16 10:40:30
  * license: MIT
  */
-/*webkit-sassui-drawer Start*/
-@-webkit-keyframes webkit-sassui-drawer-from-left-in {
+/*wsui-drawer Start*/
+@-webkit-keyframes wsui-drawer-from-left-in {
   from {
     transform: translateX(-100%); }
   to {
     transform: translateX(0); } }
-@keyframes webkit-sassui-drawer-from-left-in {
+@keyframes wsui-drawer-from-left-in {
   from {
     transform: translateX(-100%); }
   to {
     transform: translateX(0); } }
 
-@-webkit-keyframes webkit-sassui-drawer-from-left-out {
+@-webkit-keyframes wsui-drawer-from-left-out {
   from {
     transform: translateX(0); }
   to {
     transform: translateX(-100%); } }
 
-@keyframes webkit-sassui-drawer-from-left-out {
+@keyframes wsui-drawer-from-left-out {
   from {
     transform: translateX(0); }
   to {
     transform: translateX(-100%); } }
 
-@-webkit-keyframes webkit-sassui-drawer-from-right-in {
+@-webkit-keyframes wsui-drawer-from-right-in {
   from {
     transform: translateX(100%); }
   to {
     transform: translateX(0); } }
 
-@keyframes webkit-sassui-drawer-from-right-in {
+@keyframes wsui-drawer-from-right-in {
   from {
     transform: translateX(100%); }
   to {
     transform: translateX(0); } }
 
-@-webkit-keyframes webkit-sassui-drawer-from-right-out {
+@-webkit-keyframes wsui-drawer-from-right-out {
   from {
     transform: translateX(0); }
   to {
     transform: translateX(100%); } }
 
-@keyframes webkit-sassui-drawer-from-right-out {
+@keyframes wsui-drawer-from-right-out {
   from {
     transform: translateX(0); }
   to {
     transform: translateX(100%); } }
 
-.webkit-sassui-drawer {
+.wsui-drawer {
   top: 0;
   position: fixed;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   height: 100%;
   box-sizing: border-box; }
-  .webkit-sassui-drawer[data-placement="left"] {
+  .wsui-drawer[data-placement="left"] {
     left: 0; }
-    .webkit-sassui-drawer[data-placement="left"].visible-true, .webkit-sassui-drawer[data-placement="left"][data-visible="true"] {
-      -webkit-animation: 300ms webkit-sassui-drawer-from-left-in ease-in-out forwards;
-              animation: 300ms webkit-sassui-drawer-from-left-in ease-in-out forwards; }
-    .webkit-sassui-drawer[data-placement="left"].visible-false, .webkit-sassui-drawer[data-placement="left"][data-visible="false"] {
-      -webkit-animation: 300ms webkit-sassui-drawer-from-left-out ease-in-out forwards;
-              animation: 300ms webkit-sassui-drawer-from-left-out ease-in-out forwards; }
-  .webkit-sassui-drawer[data-placement="right"] {
+    .wsui-drawer[data-placement="left"].visible-true, .wsui-drawer[data-placement="left"][data-visible="true"] {
+      -webkit-animation: 300ms wsui-drawer-from-left-in ease-in-out forwards;
+              animation: 300ms wsui-drawer-from-left-in ease-in-out forwards; }
+    .wsui-drawer[data-placement="left"].visible-false, .wsui-drawer[data-placement="left"][data-visible="false"] {
+      -webkit-animation: 300ms wsui-drawer-from-left-out ease-in-out forwards;
+              animation: 300ms wsui-drawer-from-left-out ease-in-out forwards; }
+  .wsui-drawer[data-placement="right"] {
     right: 0; }
-    .webkit-sassui-drawer[data-placement="right"].visible-true, .webkit-sassui-drawer[data-placement="right"][data-visible="true"] {
-      -webkit-animation: 300ms webkit-sassui-drawer-from-right-in ease-in-out forwards;
-              animation: 300ms webkit-sassui-drawer-from-right-in ease-in-out forwards; }
-    .webkit-sassui-drawer[data-placement="right"].visible-false, .webkit-sassui-drawer[data-placement="right"][data-visible="false"] {
-      -webkit-animation: 300ms webkit-sassui-drawer-from-right-out ease-in-out forwards;
-              animation: 300ms webkit-sassui-drawer-from-right-out ease-in-out forwards; }
+    .wsui-drawer[data-placement="right"].visible-true, .wsui-drawer[data-placement="right"][data-visible="true"] {
+      -webkit-animation: 300ms wsui-drawer-from-right-in ease-in-out forwards;
+              animation: 300ms wsui-drawer-from-right-in ease-in-out forwards; }
+    .wsui-drawer[data-placement="right"].visible-false, .wsui-drawer[data-placement="right"][data-visible="false"] {
+      -webkit-animation: 300ms wsui-drawer-from-right-out ease-in-out forwards;
+              animation: 300ms wsui-drawer-from-right-out ease-in-out forwards; }
 
-/*webkit-sassui-drawer End*/
+/*wsui-drawer End*/
